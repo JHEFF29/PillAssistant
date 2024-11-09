@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bordes redondeados -->
+    <corners android:radius="100dp" /> <!-- Ajusta este valor para más o menos redondez -->
+
+    <!-- Sin color de fondo, permitirá usar `backgroundTint` o colores predeterminados -->
+</shape>
