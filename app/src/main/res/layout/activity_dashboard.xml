@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Ilustración o Icono de Bienvenida -->
+    <ImageView
+        android:id="@+id/imgWelcomeIcon"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/logo_pillassistant"
+        android:background="@drawable/rounded_logo"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto de Bienvenida -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido al Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/imgWelcomeIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón Ver Listado de Medicamentos -->
+
+    <!-- Botón Agregar Medicamento -->
+    <Button
+        android:id="@+id/btnViewMedications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_shape"
+        android:backgroundTint="@color/blue"
+        android:text="Ver Medicamentos"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome" />
+
+
+    <Button
+        android:id="@+id/btnAddMedication"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar Medicamento"
+        android:background="@drawable/rounded_button_shape"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnViewMedications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón Cerrar Sesión -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:background="@drawable/rounded_button_shape"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnAddMedication"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
